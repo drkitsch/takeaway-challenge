@@ -1,6 +1,15 @@
 class Takeaway 
 
-  describe Takeaway do 
-    it "shows the menu with the dishes and prices" do 
+  def initialize(menu:)
+    @menu = menu 
+  end 
 
+  def print_menu
+    menu.print
+  end 
+
+  private 
+
+  attr_reader :menu 
+    
 end 
