@@ -16,7 +16,9 @@ subject(:menu) { described_class.new(dishes) }
   end 
 
   it "prints a list of dishes with prices" do
-    printed_menu = "steak: 3.99, lamb: 4.99"
+    printed_menu = "Steak £3.99, Lamb £4.99"
     expect(menu.print).to eq(printed_menu)
   end 
+
+
 end 
